@@ -52,7 +52,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // This is the default html and body font-size for the base rem value.
-$rem-base: 20px;
+$rem-base: 14px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
@@ -66,7 +66,7 @@ $rem-base: 20px;
 // $base-font-size: 100%;
 
 // The $base-font-size is 100% while $base-line-height is 150%
-$base-line-height: 150%;
+$base-line-height: 200%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
@@ -116,7 +116,7 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #26B0DF;
+$primary-color: #FF8E68;
 $secondary-color: #235584;
 $wet-asphalt: #34495E;
 $dark-gray: #696969;
@@ -244,7 +244,7 @@ $h6-font-size: 1rem;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+$paragraph-font-size: 1.2rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -1452,8 +1452,9 @@ $menu-slide: "transform 500ms ease";
 
 .header {
 	text-align: center;
-	border-bottom: thin $medium-gray solid;
-	margin-bottom: 25px;
+	border-left: 10px $primary-color solid;
+	padding-left: 15px;
+	margin-bottom: 50px;
 }
 
 .center-text {
@@ -1484,13 +1485,17 @@ $menu-slide: "transform 500ms ease";
 .row.mission {
 	padding-top: 50px;
 	font-weight: 100;
+	padding-bottom: 50px;
 	.mission-box {
 		padding-top: 25px;
 		padding-bottom: 25px;
 	}
 	i {
 		padding-bottom: 15px;
-		color: $secondary-color;
+		color: #aaaaaa;
+	}
+	h5 {
+		color: #bbbbbb;
 	}
 }
 
@@ -1535,7 +1540,7 @@ $menu-slide: "transform 500ms ease";
 	.bg {
 		position: absolute;
 		z-index: -1000;
-		background: url(bg.jpg) no-repeat center center fixed; 
+		background: url(../img/bg2.jpg) no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -1575,7 +1580,7 @@ $menu-slide: "transform 500ms ease";
 					-moz-transition: 1s ease-in-out;
 					-o-transition: 1s ease-in-out;
 					transition: 1s ease-in-out;
-					color: $primary-color;	
+					color: $primary-color;
 				}
 			}
 		}
@@ -1630,4 +1635,9 @@ $menu-slide: "transform 500ms ease";
 
 h4.gray {
 	color: $dark-gray;
+}
+
+
+.row {
+	max-width: 70rem !important;
 }
