@@ -1452,7 +1452,7 @@ $menu-slide: "transform 500ms ease";
 
 .header {
 	text-align: center;
-	border-left: 10px $primary-color solid;
+	border-left: 5px $primary-color solid;
 	padding-left: 15px;
 	margin-bottom: 50px;
 }
@@ -1469,7 +1469,7 @@ $menu-slide: "transform 500ms ease";
 
 .footer {
 	margin-top: 40px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	text-align: center;
 	background-color: $secondary-color;
 	color: white;
@@ -1495,6 +1495,9 @@ $menu-slide: "transform 500ms ease";
 		color: #aaaaaa;
 	}
 	h5 {
+		color: #aaaaaa;
+	}
+	p {
 		color: #bbbbbb;
 	}
 }
@@ -1640,4 +1643,37 @@ h4.gray {
 
 .row {
 	max-width: 70rem !important;
+}
+
+.row.bg2 {
+	background-color: $primary-color;
+	max-width: 100% !important;
+	.row {
+		max-width: 70rem !important;
+		width: 100%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  margin-top: 1.42857rem;
+		  margin-bottom: 0;
+	}
+	h3 {
+		color: white;
+	}
+}
+
+.card {
+	.user-image {
+		text-align: center;
+	}
+	.content {
+		padding: 0px 0px 0px 0px !important;
+		margin: 0px 0px 0px 0px !important;
+		h3,p {
+			padding: 0px 0px 0px 0px !important;
+			margin: 0px 0px 0px 0px !important;
+		}
+	}
+	i {
+		vertical-align: text-top;
+	}
 }

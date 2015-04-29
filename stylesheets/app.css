@@ -2,7 +2,7 @@
 /* line 1453, ../scss/_settings.scss */
 .header {
   text-align: center;
-  border-left: 10px #ff8e68 solid;
+  border-left: 5px #ff8e68 solid;
   padding-left: 15px;
   margin-bottom: 50px;
 }
@@ -21,7 +21,7 @@
 /* line 1470, ../scss/_settings.scss */
 .footer {
   margin-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-align: center;
   background-color: #235584;
   color: white;
@@ -53,38 +53,42 @@
 }
 /* line 1497, ../scss/_settings.scss */
 .row.mission h5 {
+  color: #aaaaaa;
+}
+/* line 1500, ../scss/_settings.scss */
+.row.mission p {
   color: #bbbbbb;
 }
 
-/* line 1504, ../scss/_settings.scss */
+/* line 1507, ../scss/_settings.scss */
 .row.profiles .footer {
   background-color: white;
 }
 
-/* line 1510, ../scss/_settings.scss */
+/* line 1513, ../scss/_settings.scss */
 .row.process h4 {
   color: dimgray;
   padding-bottom: 15px;
 }
 
-/* line 1517, ../scss/_settings.scss */
+/* line 1520, ../scss/_settings.scss */
 .pic img {
   width: 100%;
   max-height: auto;
   padding-bottom: 10px;
 }
 
-/* line 1523, ../scss/_settings.scss */
+/* line 1526, ../scss/_settings.scss */
 .smaller-text {
   font-size: 0.75em;
 }
 
-/* line 1527, ../scss/_settings.scss */
+/* line 1530, ../scss/_settings.scss */
 .larger-text {
   font-size: 1.05em;
 }
 
-/* line 1533, ../scss/_settings.scss */
+/* line 1536, ../scss/_settings.scss */
 .full-page {
   margin: 0 0 0 0 !important;
   padding: 0 0 0 0 !important;
@@ -93,7 +97,7 @@
   min-height: 100vh;
   min-width: 100vw;
 }
-/* line 1540, ../scss/_settings.scss */
+/* line 1543, ../scss/_settings.scss */
 .full-page .bg {
   position: absolute;
   z-index: -1000;
@@ -105,7 +109,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 1551, ../scss/_settings.scss */
+/* line 1554, ../scss/_settings.scss */
 .full-page .bg_overlay {
   position: absolute;
   z-index: -1000;
@@ -117,7 +121,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 1562, ../scss/_settings.scss */
+/* line 1565, ../scss/_settings.scss */
 .full-page .home-title {
   top: 50%;
   /*left: 50%;*/
@@ -129,15 +133,15 @@
   text-align: center;
   color: white;
 }
-/* line 1572, ../scss/_settings.scss */
+/* line 1575, ../scss/_settings.scss */
 .full-page .home-title h1, .full-page .home-title h3 {
   font-weight: bold;
 }
-/* line 1576, ../scss/_settings.scss */
+/* line 1579, ../scss/_settings.scss */
 .full-page .home-title .arrow a {
   color: white;
 }
-/* line 1578, ../scss/_settings.scss */
+/* line 1581, ../scss/_settings.scss */
 .full-page .home-title .arrow a:hover {
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
@@ -147,31 +151,31 @@
 }
 
 /* remove scroll bars in Safari */
-/* line 1592, ../scss/_settings.scss */
+/* line 1595, ../scss/_settings.scss */
 .off-canvas-wrap .main-section:-webkit-scrollbar {
   display: none;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 1598, ../scss/_settings.scss */
+  /* line 1601, ../scss/_settings.scss */
   body, html {
     height: 100%;
     width: 100%;
   }
 
-  /* line 1602, ../scss/_settings.scss */
+  /* line 1605, ../scss/_settings.scss */
   .off-canvas-wrap, .inner-wrap {
     height: 100%;
   }
 
-  /* line 1606, ../scss/_settings.scss */
+  /* line 1609, ../scss/_settings.scss */
   .off-canvas-wrap .main-section {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 1614, ../scss/_settings.scss */
+/* line 1617, ../scss/_settings.scss */
 #loader {
   position: absolute;
   top: 50%;
@@ -182,7 +186,7 @@
   margin-top: -40px;
 }
 
-/* line 1624, ../scss/_settings.scss */
+/* line 1627, ../scss/_settings.scss */
 #loading_title {
   text-align: center;
   color: #ff8e68;
@@ -195,14 +199,52 @@
   z-index: 999;
 }
 
-/* line 1636, ../scss/_settings.scss */
+/* line 1639, ../scss/_settings.scss */
 h4.gray {
   color: dimgray;
 }
 
-/* line 1641, ../scss/_settings.scss */
+/* line 1644, ../scss/_settings.scss */
 .row {
   max-width: 70rem !important;
+}
+
+/* line 1648, ../scss/_settings.scss */
+.row.bg2 {
+  background-color: #ff8e68;
+  max-width: 100% !important;
+}
+/* line 1651, ../scss/_settings.scss */
+.row.bg2 .row {
+  max-width: 70rem !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.42857rem;
+  margin-bottom: 0;
+}
+/* line 1659, ../scss/_settings.scss */
+.row.bg2 h3 {
+  color: white;
+}
+
+/* line 1665, ../scss/_settings.scss */
+.card .user-image {
+  text-align: center;
+}
+/* line 1668, ../scss/_settings.scss */
+.card .content {
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+/* line 1671, ../scss/_settings.scss */
+.card .content h3, .card .content p {
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+/* line 1676, ../scss/_settings.scss */
+.card i {
+  vertical-align: text-top;
 }
 
 /* line 347, ../bower_components/foundation/scss/foundation/components/_global.scss */
