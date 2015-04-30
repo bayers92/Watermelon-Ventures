@@ -12,7 +12,6 @@
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="stylesheets/rotating-card.css" />
 	<script src="js/bootstrap.min.js"></script>
 
 
@@ -28,7 +27,7 @@
 	// Wait for window load
 	$(window).load(function() {
 			// Animate loader off screen
-			$("#loading_page").delay(000).animate({
+			$("#loading_page").delay(1000).animate({
 				top: -1000
 			}, 400);
 		});
@@ -181,6 +180,11 @@
 							<h3 class = "header text-left"> The Team </h3>
 						</div>
 					</div>
+					<div class = "row">
+							<div class = "small-12 small-centered columns">
+							<h4 class = "header2 text-left"> We are not your traditional venture capitalists. We are not in this to make 10X return on our money - <b>Our goal is to help startups succeed.</b> We don't extort you for huge equity stakes because we derive our value from helping you grow. Our value proposition is not a large sum of money, but the experience and network to help you reach exponential growth.</h4>
+						</div>
+					</div>
 
 					<div class = "row profiles">
 						<!-- CARD AYERS -->
@@ -194,19 +198,12 @@
 										<h3 class="name">Brian Ayers <small><a href="#" data-reveal-id="ayersModal"><i class="fa fa-arrow-right"></i></a></small></h3>
 										<p class="profession">Co-Managing Director</p>
 										<a href="http://linkedin.com/in/briancayers/en" class="linkedin"><i class="fa fa-linkedin fa-fw fa-1x"></i></a>
-										<a href="mailto:Brian.Ayers@nymedangels.com"><i class="fa fa-envelope-o fa-fw fa-1x"></i></a>
+										<a href="mailto:Brian.Ayers@watermelonventures.com"><i class="fa fa-envelope-o fa-fw fa-1x"></i></a>
 									</div>
 								</div>
 							</div> <!-- end card -->
 						</div> <!-- end card-container -->
 						<!-- END CARD AYERS -->
-
-						<div id="ayersModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-							<h2 id="modalTitle">Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-							<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-						</div>
 
 						<!-- CARD SHAIKH -->
 						<div class = "small-8 medium-4 large-4 columns small-centered medium-uncentered">
@@ -216,10 +213,10 @@
 								</div>
 								<div class="content">
 									<div class="main text-center">
-										<h3 class="name">Mohammad Shaikh <small><a href="http://linkedin.com/in/briancayers/en" class="linkedin"><i class="fa fa-arrow-right"></i></a></small></h3>
+										<h3 class="name">Mohammad Shaikh <small><a href="#" data-reveal-id="shaikhModal"><i class="fa fa-arrow-right"></i></a></small></h3>
 										<p class="profession">Co-Managing Director</p>
 										<a href="http://linkedin.com/in/briancayers/en" class="linkedin"><i class="fa fa-linkedin fa-fw fa-1x"></i></a>
-										<a href="mailto:Brian.Ayers@nymedangels.com"><i class="fa fa-envelope-o fa-fw fa-1x"></i></a>
+										<a href="mailto:Mohammad.Shaikh@watermelonventures.com"><i class="fa fa-envelope-o fa-fw fa-1x"></i></a>
 									</div>
 								</div>
 							</div> <!-- end card -->
@@ -238,8 +235,31 @@
 							<h3 class = "header text-left"> Portfolio </h3>
 						</div>
 					</div>
-					<div class ="small-12 small-centered columns text-center">
-						<h4 class = "gray"> Coming Soon! </h4>
+					<div class ="row portfolio">
+						<a href="http://goodeesclothing.com">
+							<div class = "client goodees">
+								<div class = "small-12 columns">
+									<h4> <b>Goodees Clothing</b> </h4>
+									<p> Brand Development and Operation Logistics </p>
+								</div>
+							</div>
+						</a>
+						<a href="http://brandclub.co">
+							<div class = "client brandClub">
+								<div class = "small-12 columns">
+									<h4> <b>Brand Club </b></h4>
+									<p> Business Development and Customer Acquisition</p>
+								</div>
+							</div>
+						</a>
+						<a href="http://campusfly.us">
+							<div class = "client campusFly">
+								<div class = "small-12 columns">
+									<h4> <b>CampusFly</b></h4>
+									<p> Business Plan and Software Development </p>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<!-- END PORTFOLIO SECTION	 -->
@@ -302,6 +322,52 @@
 					</div>
 				</div>
 				<!-- END FOOTER SECTION -->
+
+
+
+				<!-- MODALS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+
+				<!-- THE TEAM MODALS -->
+				<div id="ayersModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					<h2 id="modalTitle">Brian Ayers</h2>
+					<p class="lead">Something something</p>
+					<p>And here's some more stuff</p>
+					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+				</div>
+
+				<div id="shaikhModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					<h2 id="modalTitle">Mohammad Shaikh</h2>
+					<p class="lead">Something something</p>
+					<p>And here's some more stuff</p>
+					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+				</div>
+
+
+				<!-- PORTFOLIO MODALS -->
+				<div id="goodeesModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					<h2 id="modalTitle">Awesome. I have it.</h2>
+					<p class="lead">Your couch.  It is mine.</p>
+					<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+				</div>
+				<div id="brandClubModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					<h2 id="modalTitle">Awesome. I have it.</h2>
+					<p class="lead">Your couch.  It is mine.</p>
+					<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+				</div>
+				<div id="campusFlyModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					<h2 id="modalTitle">Awesome. I have it.</h2>
+					<p class="lead">Your couch.  It is mine.</p>
+					<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+				</div>
+
+
+
+
+
 			</section> 
 			<!-- END MAIN SECTION -->
 			<a class="exit-off-canvas"></a>
