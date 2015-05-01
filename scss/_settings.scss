@@ -134,7 +134,7 @@ $light-gray: #F9F6F6;
 $raleway:'Raleway', sans-serif;
 
 $body-bg: $white;
-$body-font-color: $wet-asphalt;
+$body-font-color: $dark-gray;
 $body-font-family: $raleway;
 $body-font-weight: normal;
 $body-font-style: normal;
@@ -1654,10 +1654,25 @@ h4.gray {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 1.42857rem;
-		margin-bottom: 0;
+		margin-bottom: 1.42857rem;;
 	}
 	h3 {
 		color: white;
+	}
+	h5 {
+		color: white;
+		a {
+			color: white;
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+	ul {
+		margin-bottom: 0px;
+	}
+	li {
+		line-height: 2.0em;
 	}
 }
 
@@ -1672,6 +1687,9 @@ h4.gray {
 		h3,p {
 			padding: 0px 0px 0px 0px !important;
 			margin: 0px 0px 0px 0px !important;
+		}
+		p.work {
+			font-size: 80%;
 		}
 	}
 	i {
@@ -1732,46 +1750,74 @@ h4.gray {
 			margin-left: 0px;
 			margin-right: 0px;
 			vertical-align: middle;
-			height: 300px;
+			height: 80vh;
 			border-bottom: solid white;
-			&:hover {
-				min-width: 100% !important;
-				background-size: cover;
-				background-position: top center;
-				max-width: 100%;
-				margin-left: 0px;
-				margin-right: 0px;
-				vertical-align: middle;
-				height: 300px;
-			}
 		}
 		.columns {
 			margin-top: 20px;
 			text-align: left;
-			h4 {
+			h2 {
 				color: white;
 			}
 			p { 
-				color: white;
+				color: $smoke;
 			}
 		}
 		.client.goodees {
-			background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),  url('../img/goodees.jpg') no-repeat;
+			background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url('../img/goodees.jpg') no-repeat;
 			&:hover {
 				background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url('../img/goodees.jpg') no-repeat;
 			}
 		}
 		.client.brandClub {
-			background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ),  url('../img/brandClub.jpg') no-repeat;
+			background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url('../img/brandClub.jpg') no-repeat;
 			&:hover {
 				background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url('../img/brandClub.jpg') no-repeat;
 			}
 		}
 		.client.campusFly {
-			background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ),  url('../img/campusFly.jpg') no-repeat;
+			background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url('../img/campusFly.jpg') no-repeat;
 			&:hover {
 				background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url('../img/campusFly.jpg') no-repeat;
 			}
 		}
+		.client.adnetza {
+			background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url('../img/adnetza.jpg') no-repeat;
+			&:hover {
+				background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url('../img/adnetza.jpg') no-repeat;
+			}
+		}
+	}
+}
+
+@media #{$small-only} {
+	.row.portfolio {
+		a {
+			.client {
+				height: 350px;
+			}
+			.client.brandClub, .client.adnetza {
+				  background-position-x: 60%;
+				  background-position-y: 0%;
+				  &:hover {
+					  background-position-x: 60%;
+					  background-position-y: 0%;
+				  }
+			}
+			.client.campusFly {
+				  background-position-x: 50%;
+				  background-position-y: 0%;
+				  &:hover {
+					  background-position-x: 50%;
+					  background-position-y: 0%;
+				  }
+			}
+		}
+	}
+}
+
+.contact-subheader {
+	h5 {
+		color: $base;
 	}
 }
