@@ -250,7 +250,7 @@ h4.gray {
 
 /* line 1679, ../scss/_settings.scss */
 .card {
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 /* line 1681, ../scss/_settings.scss */
 .card .user-image {
@@ -267,15 +267,16 @@ h4.gray {
   margin: 0px 0px 0px 0px !important;
 }
 /* line 1691, ../scss/_settings.scss */
-.card .content .work {
+.card .content p.work {
   font-size: 80%;
 }
 /* line 1695, ../scss/_settings.scss */
 .card i {
-  vertical-align: text-top;
+  vertical-align: super;
+  color: #c2c0c0;
 }
 
-/* line 1700, ../scss/_settings.scss */
+/* line 1701, ../scss/_settings.scss */
 .row.hero {
   min-width: 100% !important;
   min-height: 100% !important;
@@ -290,43 +291,43 @@ h4.gray {
   height: 100vh;
   width: 100vw;
 }
-/* line 1715, ../scss/_settings.scss */
+/* line 1716, ../scss/_settings.scss */
 .row.hero .logo {
   top: 30%;
   min-height: 10vh;
 }
-/* line 1719, ../scss/_settings.scss */
+/* line 1720, ../scss/_settings.scss */
 .row.hero .arrow {
   text-align: center;
   height: 30vh;
   top: 40%;
   left: 0;
 }
-/* line 1724, ../scss/_settings.scss */
+/* line 1725, ../scss/_settings.scss */
 .row.hero .arrow a {
   color: white;
 }
-/* line 1726, ../scss/_settings.scss */
+/* line 1727, ../scss/_settings.scss */
 .row.hero .arrow a:hover {
   color: #ff8e68;
 }
 
-/* line 1733, ../scss/_settings.scss */
+/* line 1734, ../scss/_settings.scss */
 .header2 {
   color: #aaaaaa;
   padding-bottom: 50px;
 }
-/* line 1736, ../scss/_settings.scss */
+/* line 1737, ../scss/_settings.scss */
 .header2 i {
   color: #aaaaaa;
 }
 
-/* line 1741, ../scss/_settings.scss */
+/* line 1742, ../scss/_settings.scss */
 .row.portfolio {
   min-width: 100% !important;
   max-width: 100% !important;
 }
-/* line 1745, ../scss/_settings.scss */
+/* line 1746, ../scss/_settings.scss */
 .row.portfolio a .client {
   min-width: 100% !important;
   background-size: cover;
@@ -338,79 +339,79 @@ h4.gray {
   height: 80vh;
   border-bottom: solid white;
 }
-/* line 1756, ../scss/_settings.scss */
+/* line 1757, ../scss/_settings.scss */
 .row.portfolio a .columns {
   margin-top: 20px;
   text-align: left;
 }
-/* line 1759, ../scss/_settings.scss */
+/* line 1760, ../scss/_settings.scss */
 .row.portfolio a .columns h2 {
   color: white;
 }
-/* line 1762, ../scss/_settings.scss */
+/* line 1763, ../scss/_settings.scss */
 .row.portfolio a .columns p {
   color: #eeeeee;
 }
-/* line 1766, ../scss/_settings.scss */
+/* line 1767, ../scss/_settings.scss */
 .row.portfolio a .client.goodees {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/goodees.jpg") no-repeat;
 }
-/* line 1768, ../scss/_settings.scss */
+/* line 1769, ../scss/_settings.scss */
 .row.portfolio a .client.goodees:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/goodees.jpg") no-repeat;
 }
-/* line 1772, ../scss/_settings.scss */
+/* line 1773, ../scss/_settings.scss */
 .row.portfolio a .client.brandClub {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/brandClub.jpg") no-repeat;
 }
-/* line 1774, ../scss/_settings.scss */
+/* line 1775, ../scss/_settings.scss */
 .row.portfolio a .client.brandClub:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/brandClub.jpg") no-repeat;
 }
-/* line 1778, ../scss/_settings.scss */
+/* line 1779, ../scss/_settings.scss */
 .row.portfolio a .client.campusFly {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/campusFly.jpg") no-repeat;
 }
-/* line 1780, ../scss/_settings.scss */
+/* line 1781, ../scss/_settings.scss */
 .row.portfolio a .client.campusFly:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/campusFly.jpg") no-repeat;
 }
-/* line 1784, ../scss/_settings.scss */
+/* line 1785, ../scss/_settings.scss */
 .row.portfolio a .client.adnetza {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/adnetza.jpg") no-repeat;
 }
-/* line 1786, ../scss/_settings.scss */
+/* line 1787, ../scss/_settings.scss */
 .row.portfolio a .client.adnetza:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/adnetza.jpg") no-repeat;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 1796, ../scss/_settings.scss */
+  /* line 1797, ../scss/_settings.scss */
   .row.portfolio a .client {
     height: 350px;
   }
-  /* line 1799, ../scss/_settings.scss */
+  /* line 1800, ../scss/_settings.scss */
   .row.portfolio a .client.brandClub, .row.portfolio a .client.adnetza {
     background-position-x: 60%;
     background-position-y: 0%;
   }
-  /* line 1802, ../scss/_settings.scss */
+  /* line 1803, ../scss/_settings.scss */
   .row.portfolio a .client.brandClub:hover, .row.portfolio a .client.adnetza:hover {
     background-position-x: 60%;
     background-position-y: 0%;
   }
-  /* line 1807, ../scss/_settings.scss */
+  /* line 1808, ../scss/_settings.scss */
   .row.portfolio a .client.campusFly {
     background-position-x: 50%;
     background-position-y: 0%;
   }
-  /* line 1810, ../scss/_settings.scss */
+  /* line 1811, ../scss/_settings.scss */
   .row.portfolio a .client.campusFly:hover {
     background-position-x: 50%;
     background-position-y: 0%;
   }
 }
-/* line 1820, ../scss/_settings.scss */
+/* line 1821, ../scss/_settings.scss */
 .contact-subheader h5 {
   color: #aaaaaa;
 }
